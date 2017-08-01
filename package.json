@@ -1,0 +1,26 @@
+{
+  "name": "aira-community-bot",
+  "version": "0.1.0",
+  "description": "Airalab community Telegram bot",
+  "main": "index.js",
+  "dependencies": {
+      "node-telegram-bot-api": ""
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airalab/community-bot.git"
+  },
+  "keywords": [
+    "Airalab",
+    "Telegram"
+  ],
+  "author": "Alexander Krupenkin",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/airalab/community-bot/issues"
+  },
+  "homepage": "https://github.com/airalab/community-bot#readme"
+}
