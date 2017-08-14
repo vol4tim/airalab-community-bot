@@ -2,14 +2,13 @@
   "name": "aira-community-bot",
   "version": "0.1.0",
   "description": "Airalab community Telegram bot",
-  "main": "index.js",
-  "dependencies": {
-      "node-telegram-bot-api": ""
+  "main": "src/index.js",
+  "author": "Alexander Krupenkin",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/airalab/community-bot/issues"
   },
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/airalab/community-bot#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/airalab/community-bot.git"
@@ -18,10 +17,24 @@
     "Airalab",
     "Telegram"
   ],
-  "author": "Alexander Krupenkin",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/airalab/community-bot/issues"
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "babel src -d dist --presets es2015,stage-2",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/airalab/community-bot#readme"
+  "dependencies": {
+    "firebase": "^4.2.0",
+    "lodash": "^4.17.4",
+    "node-cron": "^1.2.0",
+    "node-telegram-bot-api": "^0.27.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "nodemon": "^1.11.0"
+  }
 }
