@@ -1584,10 +1584,6 @@ nested-error-stacks@^1.0.0:
   dependencies:
     inherits "~2.0.1"
 
-node-cron@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/node-cron/-/node-cron-1.2.0.tgz#024987b1b492044aa00d75f5ca64aa7c94e0d256"
-
 node-pre-gyp@^0.6.36:
   version "0.6.36"
   resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.36.tgz#db604112cb74e0d477554e9b505b17abddfab786"
