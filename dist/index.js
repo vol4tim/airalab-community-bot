@@ -53,6 +53,7 @@ _bot2.default.on('message', function (msg) {
 });
 
 var access = function access(username) {
+  username = '@' + username.replace(/^@/gi, '');
   return admins.byName(username).then(function (s) {
     var value = s.val();
     if (value === null) {

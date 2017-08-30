@@ -30,6 +30,7 @@ bot.on('message', msg => {
 });
 
 const access = (username) => {
+  username = '@' + username.replace(/^@/gi, '');
   return admins.byName(username)
    .then((s) => {
      const value = s.val();
